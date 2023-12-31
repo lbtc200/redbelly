@@ -1,1 +1,47 @@
-Here is the code to create a simple smart contract on Solidity for the blockchain Redbelly
+StorageNumber Smart Contract Documentation
+
+Overview
+The StorageNumber contract is a simple Ethereum smart contract written in Solidity. Its primary purpose is to store and retrieve a uint256 value. The contract includes two main functions: one to set the value and another to get the value. This contract is useful for demonstrating basic smart contract interactions on the Ethereum blockchain.
+
+Contract Specification
+License : SPDX-License-Identifier: MIT
+Prerequisites : Solidity version 0.8.0 or higher.
+State Variable storedNumber (uint256): A private variable to store the integer value.
+Functions : set(uint256 _value)
+
+Visibility: public
+Description: Sets the storedNumber to a new value.
+Parameters:
+_value (uint256): The new value to store.
+get()
+
+Visibility: public
+Returns: uint256
+Description: Returns the current value of storedNumber.
+Deployment and Interaction Guide
+Using Remix IDE
+Setup Remix IDE
+
+Access Remix IDE.
+Ensure you have the Solidity Compiler and Deploy & Run Transactions plugins active.
+Load the Contract
+
+Create a new file in Remix and name it StorageNumber.sol.
+Paste the provided Solidity code into this file.
+Compile the Contract
+
+Select the Solidity Compiler tab.
+Choose the correct compiler version (0.8.0 or newer).
+Click on the "Compile" button.
+Deploy the Contract
+
+Switch to the Deploy & Run Transactions tab.
+Select an environment ( Injected Web3 for live deployment on RedBelly Devnet).
+Click on "Deploy" to deploy the contract to the selected blockchain environment.
+Interact with the Contract
+
+Once deployed, the contract will appear under the "Deployed Contracts" section.
+To set a value, enter a number in the set function input and click the button.
+To get the current stored value, click the get function button. The value will be displayed in the output.
+Notes
+Ensure to have enough RBNT (faucet in their discord) in your account for deployment and interaction if using a live network.
